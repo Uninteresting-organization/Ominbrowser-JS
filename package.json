@@ -1,0 +1,31 @@
+{
+  "name": "omnibrowser",
+  "version": "1.0.0",
+  "description": "一個由 Goblin 工程師打造的儀式感瀏覽器，融合 meme、美學與技術詩歌。",
+  "main": "main.js",
+ "scripts": {
+  "start": "electron .",
+  "dev": "nodemon main.js",
+  "build": "echo '🛠️ Goblin browser build ritual started...'",
+  "test": "echo '🔍 Goblin browser test ritual initiated...'"
+},
+  "keywords": [
+    "browser",
+    "goblin",
+    "meme",
+    "儀式感",
+    "onboarding",
+    "javascript",
+    "desktop"
+  ],
+  "author": "SalmonSkate2256 / hray1413",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^38.1.2",
+    "express": "^4.18.2",
+    "zip-folder": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

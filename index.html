@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <title>OmniBrowser 搜尋儀式</title>
+  <style>
+    body {
+      background-color: #fff;
+      font-family: "Segoe UI", sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    input {
+      width: 300px;
+      padding: 10px;
+      font-size: 1em;
+    }
+    button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>🔍 Goblin 搜尋儀式</h1>
+  <input type="text" id="searchInput" placeholder="輸入關鍵字..." />
+  <button onclick="search()">啟動儀式</button>
+
+  <script>
+    function search() {
+      const query = document.getElementById('searchInput').value;
+      if (query.trim()) {
+        const url = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+        window.location.href = url;
+      }
+    }
+  </script>
+</body>
+</html>
